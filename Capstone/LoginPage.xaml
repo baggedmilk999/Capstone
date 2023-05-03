@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Capstone.LoginPage"
+             Title="Login">
+    <StackLayout>
+        <Entry x:Name="EmailEntry" Placeholder="Email" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+        <Button Text="Login" Command="{Binding LoginCommand}" />
+        <Label Text="Don't have an account? Sign up!" />
+        <Entry Placeholder="Email" Keyboard="Email" x:Name="emailEntry" Margin="0,0,0,10" />
+        <Entry Placeholder="Password" IsPassword="True" x:Name="passwordEntry" Margin="0,0,0,10" />
+        <Button Text="Sign up" Command="{Binding SignUpCommand}"/>
+    </StackLayout>
+</ContentPage>

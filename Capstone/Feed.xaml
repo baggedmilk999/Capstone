@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Capstone.Feed"
+             Title="Feed">
+    <VerticalStackLayout>
+        <Button Text="Add Photo" Clicked="AddPhoto_Clicked"/>
+        <CollectionView ItemsSource="{Binding Photos}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding PhotoUrl}"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
